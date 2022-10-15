@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 50px;
+}
+#adminDashboard{
+    background-color: whitesmoke;
+}
+.adminPanel{
+    width: 1400px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr auto;
+}
+#sidenav{
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: #1992D4;
+    display: grid; 
+    grid-template-rows: 1fr 10fr;
+}
+header{
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#topHeader{
+    grid-column-start: span 2;
+}
+main{
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
+}
+#projects{
+    grid-row: span 2;
+}
+.projectsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
